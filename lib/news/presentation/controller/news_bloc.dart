@@ -102,6 +102,7 @@ class NewsBloc extends Bloc<NewsEvent, NewsState> {
 
   FutureOr<void> _getSearchNews(
       SearchEvent event, Emitter<NewsState> emit) async {
+    emit(state.copyWith(searchNewsState: RequestState.isLoading));
     final result = await getSearchNewsByWordUseCase
         .call(SearchParameters(searchWord: event.searchWord));
     result.fold(

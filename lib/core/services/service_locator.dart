@@ -9,6 +9,7 @@ import 'package:news_app/news/domain/use_case_impl/science_news_use_case.dart';
 import 'package:news_app/news/domain/use_case_impl/search_by_word_use_case.dart';
 import 'package:news_app/news/domain/use_case_impl/sports_news_use_case.dart';
 import 'package:news_app/news/presentation/controller/news_bloc.dart';
+import 'package:news_app/news/presentation/controller/search_bloc.dart';
 
 GetIt sl = GetIt.instance;
 
@@ -43,5 +44,9 @@ class ServiceLocator {
           getEntertainmentNewsUseCase: sl(),
           getBreakingNewsUseCase: sl()),
     );
+
+    sl.registerFactory(() => SearchBloc(getSearchNewsUseCase: sl()));
   }
+
+
 }

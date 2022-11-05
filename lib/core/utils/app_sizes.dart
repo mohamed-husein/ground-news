@@ -118,65 +118,30 @@ class AppSizes {
   /// Images Sizes Height
   static final double imageHeightTiny = 40.h;
   static final double imageHeightSimiTiny = 30.h;
-  static final double imageHeightSmall = 50.h;
-  static final double imageHeight2XSmall = 55.h;
   static final double imageHeightMedium = 100.h;
   static final double imageHeightLarge = 200.h;
 
-  /// Images Sizes Width
-  static final double imageWidthTiny = 40.w;
-  static final double imageWidthSmall = 50.w;
   static final double imageWidthMedium = 100.w;
-  static final double imageWidthLarge = 200.w;
 
-  /// Loading Indicator Size
-  static final double loadingIndicatorLargeWidth = 100.w;
-  static final double loadingIndicatorLargeHeight = 100.h;
-  static final double loadingIndicatorMediumHeight = 15.h;
-
-  /// TODO : WHAT IS THAT !!
-  static final double loadingIndicatorThick = 1.h;
-
-  /// icons Sizes
+  /// Icons
   static final double iconSize = 18.w;
   static final double starIconSize = 14.w;
+  static final double smallIconSize = 22.r;
 
-  /// SizedBox Height
+  /// Sizedbox Height
   static final double sizedBoxHeightSimiTiny = 5.h;
   static final double sizedBoxHeightTiny = 15.h;
   static final double sizedBoxHeightSmall = 20.h;
   static final double sizedBoxHeightMedium = 32.h;
   static final double sizedBoxHeightLarge = 55.h;
 
-  /// SizedBox Width
+  /// Sizedbox Width
   static final double sizedBoxWidthSimiTiny = 5.w;
   static final double sizedBoxWidthTiny = 12.w;
   static final double sizedBoxWidthSmall = 18.w;
   static final double sizedBoxWidthMedium = 32.w;
 
-  /// Button Sized
-  static final double buttonWidthSimiSmall = widthFullScreen / 3;
-  static final double buttonWidthSmall = widthFullScreen / 2;
-  static final double buttonWidthMedium = widthFullScreen / 1.5;
-  static final double buttonWidthLarge = widthFullScreen;
-
-  static final double simiSmallButtonHeight = 27.h;
-  static final double smallButtonHeight = 35.h;
+  /// Button
   static final double mediumButtonHeight = 45.h;
   static final double mediumButtonWidth = 45.w;
-  static final double largeButtonHeight = 60.h;
-
-  static final double smallButtonWidth = 35.w;
-
-  /// Divider Thickness
-  static final double dv1 = 1.h;
-  static final double dv2 = 2.h;
-  static final double dv3 = 3.h;
-
-  /// Icon Size
-  ///
-  static final double tinyIconSize = 11.w;
-  static final double smallIconSize = 22.r;
-  static final double mediumIconSize = 30.r;
-  static final double largeIconSize = 45.r;
 }

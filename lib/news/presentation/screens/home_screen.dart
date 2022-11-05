@@ -11,6 +11,7 @@ import 'package:news_app/core/widgets/images/custom_png_image.dart';
 import 'package:news_app/core/widgets/images/custom_svg_image.dart';
 import 'package:news_app/news/presentation/controller/news_bloc.dart';
 import 'package:news_app/news/presentation/screens/news_screen.dart';
+import 'package:news_app/news/presentation/screens/search_screen.dart';
 import 'package:news_app/news/presentation/widgets/breaking_news_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -44,6 +45,7 @@ class HomeScreen extends StatelessWidget {
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: AppSizes.pW22),
           child: SingleChildScrollView(
+            physics: const BouncingScrollPhysics(),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -67,7 +69,12 @@ class HomeScreen extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    ///! TODO Navigate To Search Screen
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => SearchScreen(),
+                      ),
+                    );
                   },
                   child: Container(
                     decoration: BoxDecoration(

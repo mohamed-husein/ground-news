@@ -19,5 +19,5 @@ class ApiConstants {
       '$newsPathUrl/top-headlines?country=us&category=business&apiKey=$newsApiKey';
 
   static String searchPath(String searchWord) =>
-      '$newsPathUrl/everything?q=$searchWord&apiKey=$newsApiKey';
+     '$newsPathUrl/everything?q=$searchWord&apiKey=$newsApiKey';
 }

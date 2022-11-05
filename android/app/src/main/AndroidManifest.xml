@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.elmatbouly.news_app">
    <application
-        android:label="news_app"
+        android:label="Ground News"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
