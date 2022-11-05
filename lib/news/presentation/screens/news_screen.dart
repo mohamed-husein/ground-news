@@ -29,7 +29,7 @@ class NewsScreen extends StatelessWidget {
                 title: news[index].title,
                 date: news[index].publishedAt,
                 onTap: () {
-                  Navigator.pushReplacement(
+                  Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => DetailsScreen(

@@ -19,15 +19,15 @@ class BreakingNewsWidget extends StatelessWidget {
           case RequestState.isLoading:
             return Center(
                 child: FadeInImage.assetNetwork(
-                  width: 250,
-                  height: 250,
-                  placeholderCacheWidth: 100,
-                  placeholderCacheHeight: 100,
-                  fit: BoxFit.cover,
-                  placeholder: AppAssets.loading,
-                  image:
+              width: 250,
+              height: 250,
+              placeholderCacheWidth: 100,
+              placeholderCacheHeight: 100,
+              fit: BoxFit.cover,
+              placeholder: AppAssets.loading,
+              image:
                   'https://ar.limu.edu.ly/wp-content/uploads/sites/18/2020/10/pure-white-background-85a2a7fd.jpg',
-                ));
+            ));
 
           case RequestState.isLoaded:
             return ListView.separated(
@@ -37,19 +37,21 @@ class BreakingNewsWidget extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return ArticleWidget(
                       onTap: () {
-                        Navigator.pushReplacement(context, MaterialPageRoute(
-                          builder: (context) =>
-                              DetailsScreen(circleChar: state
-                                  .breakingNews[index].creator[0],
-                                  authName: state.breakingNews[index].creator
-                                      .join('-'),
-                                  date: state.breakingNews[index].pubDate,
-                                  description: state.breakingNews[index]
-                                      .description,
-                                  title: state.breakingNews[index].title,
-                                  image: state.breakingNews[index]
-                                      .imageUrl,),),);
-
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => DetailsScreen(
+                              circleChar: state.breakingNews[index].creator[0],
+                              authName:
+                                  state.breakingNews[index].creator.join('-'),
+                              date: state.breakingNews[index].pubDate,
+                              description:
+                                  state.breakingNews[index].description,
+                              title: state.breakingNews[index].title,
+                              image: state.breakingNews[index].imageUrl,
+                            ),
+                          ),
+                        );
                       },
                       image: state.breakingNews[index].imageUrl,
                       title: state.breakingNews[index].title,
