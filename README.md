@@ -28,7 +28,7 @@ News App Flutter is a simple news app built with Flutter that displays breaking 
 - equatable
 
 ## Ground News Video
-- [Movies App video](https://www.linkedin.com/posts/mohamed-hussein-aab3561b1_flutter-cleanarchitecture-mobiledevelopment-activity-6994706173870419968-eLlm?utm_source=share&utm_medium=member_desktop)
+- [News App video](https://www.linkedin.com/posts/mohamed-hussein-aab3561b1_flutter-cleanarchitecture-mobiledevelopment-activity-6994706173870419968-eLlm?utm_source=share&utm_medium=member_desktop)
 
 ## Screen Shots.
 <img align="left" width="30%" src="https://user-images.githubusercontent.com/102866604/229380258-212a3728-cb4c-4554-883d-99c541397563.jpg">
